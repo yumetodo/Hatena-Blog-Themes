@@ -228,12 +228,22 @@ a.keyword {
     margin-bottom: 20px;
     border-bottom: 1px solid @border;
     position: relative;
+    .entry-header-menu {
+        a, a:hover {
+            color: #000;
+        }
+    }
 }
 
 .entry-title {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     margin: 0;
     line-height: 1.3;
     font-size: 160%;
+    a.entry-title-link {
+        color: @text-header;
+        text-decoration: none;
+    }
 }
 
 /* 日付 */
@@ -267,7 +277,8 @@ a.keyword {
     position: absolute;
     bottom: 0px;
     left: -60px;
-    a {
+    a, a:hover {
+        color: #000;
         .btn;
     }
 }
@@ -452,6 +463,9 @@ a.keyword {
         .border-radius(3px);
     }
 
+    .leave-comment-title, .leave-comment-title:hover {
+        color: #000;
+    }
 }
 
 .comment-user-name {
@@ -478,7 +492,8 @@ a.keyword {
     }
 }
 
-.leave-comment-title {
+.leave-comment-title, .leave-comment-title:hover {
+    color: #000;
     .btn;
 }
 
