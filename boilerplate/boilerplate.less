@@ -43,6 +43,7 @@ a {
 
 
 h1,h2,h3,h4,h5,h6 {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     a,a:hover,a:visited {
         color: @text-header;
         text-decoration: none;
@@ -217,6 +218,9 @@ a.keyword {
 .entry {
     position: relative;
     margin-bottom: 100px;
+    border: 1px solid @border;
+    box-shadow:0px 0px 6px 1px @box-shadow-to;
+    padding: 0 5px;
 }
 
 .entry-header {
@@ -289,6 +293,17 @@ a.keyword {
         line-height: 1.5;
     }
 
+    h1, h2, h3, h4 {
+        background-color: @bg-light;
+        box-shadow:0px 0px 6px 1px @box-shadow-to inset;
+        padding: 4px 6px;
+    }
+
+    h5, h6 {
+        border-left: 5px solid @bg-light;
+        padding-left: 5px;
+    }
+
     h1 {
         font-size: 160%;
     }
@@ -334,6 +349,7 @@ a.keyword {
     }
 
     blockquote {
+        background-color: @bg-light;
         border: 1px solid @border;
         margin: 0 0 10px;
         padding: 20px;
@@ -344,6 +360,7 @@ a.keyword {
     }
 
     pre {
+        background-color: @code-bg-color;
         border: 1px solid @border;
         margin: 0 0 10px;
         padding: 20px;
@@ -367,6 +384,10 @@ a.keyword {
         background-color: #f8f8f8;
         border-radius: 3px;
         font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+    }
+
+    hr {
+        border-color: @border;
     }
 
     .hatena-asin-detail {
