@@ -38,7 +38,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         adjustHeader();
     });
-    (function() {
+    {
         let resizeTimer;
         window.addEventListener('resize', function() {
             if (resizeTimer !== false) {
@@ -48,5 +48,5 @@
                 adjustHeader();
             }, 0.1);
         });
-    }());
+    }
 }());
