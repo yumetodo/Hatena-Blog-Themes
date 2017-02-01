@@ -14,7 +14,7 @@
         return (0 === n) ? '0' : n + 'px';
     };
     const adjustHeader = function() {
-        const ratio = 0.16;
+        const ratio = 0.20;
         const minMarginBottom = 3;
 
         const header = document.getElementById('blog-title');
