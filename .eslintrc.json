@@ -67,10 +67,7 @@
 		"object-curly-newline":        "off",
 		"object-property-newline":     "off",
 		"one-var":                     ["warn", "never"],
-		"operator-linebreak":          [
-			"warn", "after",
-			{"overrides": {"?": "after", ":": "after"}}
-		],
+		"operator-linebreak":          ["warn", "before"],
 		"padded-blocks":               ["warn", "never"],
 		"prefer-arrow-callback":       "off",
 		"prefer-template":             "off",
