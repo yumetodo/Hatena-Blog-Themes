@@ -1,0 +1,29 @@
+{
+  "name": "yumetodo",
+  "version": "1.0.4",
+  "description": "Hatena Blog Theme (yumetodo customized)",
+  "main": "boilerplate/header_adjuster.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint boilerplate/header_adjuster.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yumetodo/Hatena-Blog-Themes.git"
+  },
+  "keywords": [
+    "themes",
+    "Hatena",
+    "Blog",
+    "Responsive"
+  ],
+  "author": "yumetodo <yume-wikijp@live.jp> (https://github.com/yumetodo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yumetodo/Hatena-Blog-Themes/issues"
+  },
+  "homepage": "https://github.com/yumetodo/Hatena-Blog-Themes#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1"
+  }
+}
