@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint boilerplate/header_adjuster.js",
-    "lesshint": "lesshint boilerplate/"
+    "lesshint": "lesshint boilerplate/",
+    "lint": "npm-run-all --parallel eslint lesshint",
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/yumetodo/Hatena-Blog-Themes#readme",
   "devDependencies": {
     "eslint": "^3.14.1",
-    "lesshint": "^2.4.0"
+    "lesshint": "^2.4.0",
+    "npm-run-all": "^4.0.1"
   }
 }
