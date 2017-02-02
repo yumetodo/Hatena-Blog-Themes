@@ -1,0 +1,46 @@
+{
+    "fileExtensions": [".less", ".css"],
+    "excludedFiles": ["boilerplate/3rdparty/normalize.css/normalize.css"],
+
+    "attributeQuotes":         { "enabled": true, "severity": "error" },
+    "borderZero":              { "enabled": true, "severity": "error", "style": "zero" },
+    "Comment":                 { "enabled": false },
+    "decimalZero":             { "enabled": true, "severity": "warning", "leading": true },
+    "depth":                   { "enabled": true, "severity": "warning", "depth": 4 },
+    "duplicateProperty":       { "enabled": true, "severity": "error", "exclude": ["background"] },
+    "emptyRule":               { "enabled": true, "severity": "error" },
+    "finalNewline":            { "enabled": true, "severity": "error" },
+    "hexLength":               { "enabled": true, "severity": "warning", "style": "long" },
+    "hexNotation":             { "enabled": true, "severity": "warning", "style": "lowercase" },
+    "hexValidation":           { "enabled": true, "severity": "error" },
+    "idSelector":              { "enabled": false },
+    "importantRule":           { "enabled": true, "severity": "error" },
+    "importPath":              { "enabled": false },
+    "maxCharPerLine":          { "enabled": true, "severity": "warning", "limit": 120 },
+    "newlineAfterBlock":       { "enabled": true, "severity": "warning" },
+    "propertyOrdering":        { "enabled": false },
+    "propertyUnits":           { "enabled": false },
+    "qualifyingElement":       {
+        "enabled": true, "severity": "error",
+        "allowWithAttribute": true, "allowWithClass": false, "allowWithId": false
+    },
+    "selectorNaming":          {
+        "enabled": true, "severity": "warning",
+        "disallowUppercase": true, "disallowUnderscore": true, "disallowDash": false
+    },
+    "singleLinePerProperty":   { "enabled": true, "severity": "warning", "allowSingleLineRules": false },
+    "singleLinePerSelector":   { "enabled": false },
+    "spaceAfterPropertyColon": { "enabled": true, "severity": "warning", "style": "one_space" },
+    "spaceAfterPropertyName":  { "enabled": true, "severity": "warning", "style": "no_space" },
+    "spaceAfterPropertyValue": { "enabled": true, "severity": "warning", "style": "no_space" },
+    "spaceAroundComma":        { "enabled": true, "severity": "warning", "allowNewline": false, "style": "after" },
+    "spaceAroundOperator":     { "enabled": true, "severity": "warning", "style": "both" },
+    "spaceBeforeBrace":        { "enabled": true, "severity": "warning", "style": "one_space" },
+    "spaceBetweenParens":      { "enabled": true, "severity": "warning", "style": "no_space" },
+    "stringQuotes":            { "enabled": true, "severity": "warning", "style": "single" },
+    "trailingSemicolon":       { "enabled": true, "severity": "error" },
+    "trailingWhitespace":      { "enabled": true, "severity": "error" },
+    "urlFormat":               { "enabled": false },
+    "urlQuotes":               { "enabled": true, "severity": "error" },
+    "zeroUnit":                { "enabled": true, "severity": "error", "style": "no_unit" }
+}
