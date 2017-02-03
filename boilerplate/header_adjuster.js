@@ -1,3 +1,4 @@
+/* ! header_adjuster.js by yumetodo v1.0.4 | Boost Software License | https://github.com/yumetodo/Hatena-Blog-Themes */
 (function() {
     'use strict';
 
