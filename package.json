@@ -9,7 +9,7 @@
     "eslint": "eslint boilerplate/header_adjuster.js",
     "lesshint": "lesshint boilerplate/",
     "lint": "npm-run-all --parallel eslint lesshint",
-    "build:less": "lessc --clean-css=\"--s1 --advanced\" boilerplate/boilerplate.less style.min.css"
+    "build:less": "lessc --clean-css=\"--s1 --advanced\" boilerplate/boilerplate.less bin/style.min.css",
   },
   "repository": {
     "type": "git",
