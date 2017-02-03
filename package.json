@@ -4,12 +4,14 @@
   "description": "Hatena Blog Theme (yumetodo customized)",
   "main": "boilerplate/header_adjuster.js",
   "scripts": {
+    "install": "node closure-compiler-install.js",
     "build": "npm-run-all --parallel build:*",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint boilerplate/header_adjuster.js closure-compiler-install.js",
     "lesshint": "lesshint boilerplate/",
     "lint": "npm-run-all --parallel eslint lesshint",
     "build:less": "lessc --clean-css=\"--s1 --advanced\" boilerplate/boilerplate.less bin/style.min.css",
+    "build:js": "java -jar closure-compiler.jar --compilation_level=ADVANCED  --js='boilerplate/header_adjuster.js' --js_output_file='bin/header_adjuster.min.js' --language_out=ECMASCRIPT5_STRICT -W=VERBOSE --charset='UTF-8'"
   },
   "repository": {
     "type": "git",
