@@ -3,6 +3,7 @@ node_js:
   - "node"
 install:
   - npm update -g npm
+  - java -version
 
 build:
   ci:
