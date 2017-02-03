@@ -9,6 +9,7 @@ build:
   ci:
     - npm install
     - npm run lint
+    - npm run build
 
 notifications:
   email:
