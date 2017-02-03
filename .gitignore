@@ -2,3 +2,5 @@
 node_modules/
 bin/
 style.css
+npm-debug.log
+closure-compiler.jar

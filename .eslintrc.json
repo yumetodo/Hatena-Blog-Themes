@@ -2,10 +2,8 @@
 	"extends": "eslint:all",
 	"env": {
         "es6": true,
-		"browser": true,
-		"jquery": true
+		"node": true
     },
-	"globals": {"m": false},
 	"x": {"ecmaVersion": 7, "sourceType": "script"},
 	"rules": {
 		"arrow-parens":                ["warn", "as-needed"],
@@ -46,6 +44,7 @@
 		"newline-per-chained-call":    "off",
 		"no-alert":                    "off",
 		"no-confusing-arrow":          "off",
+		"no-console":                  "off",
 		"no-eq-null":                  "off",
 		"no-extra-parens":             "off",
 		"no-invalid-this":             "off",

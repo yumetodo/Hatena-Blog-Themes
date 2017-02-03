@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm-run-all --parallel build:*",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint boilerplate/header_adjuster.js",
+    "eslint": "eslint boilerplate/header_adjuster.js closure-compiler-install.js",
     "lesshint": "lesshint boilerplate/",
     "lint": "npm-run-all --parallel eslint lesshint",
     "build:less": "lessc --clean-css=\"--s1 --advanced\" boilerplate/boilerplate.less bin/style.min.css",
@@ -28,10 +28,14 @@
   },
   "homepage": "https://github.com/yumetodo/Hatena-Blog-Themes#readme",
   "devDependencies": {
+    "download": "^5.0.3",
     "eslint": "^3.14.1",
+    "eslint-plugin-node": "^3.0.5",
+    "fs-promise": "^1.0.0",
     "less": "^2.7.2",
     "less-plugin-clean-css": "^1.5.1",
     "lesshint": "^2.4.0",
-    "npm-run-all": "^4.0.1"
+    "npm-run-all": "^4.0.1",
+    "path": "^0.12.7"
   }
 }
