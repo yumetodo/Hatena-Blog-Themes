@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - 4.2.3
+install:
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+  - export NVM_DIR="$HOME/.nvm"
+  - [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  - nvm install node
+  - nvm use node
+  - npm update -g npm
+
+build:
+  ci:
+    - npm install
+    - npm run lint
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
