@@ -39,5 +39,8 @@
     "lesshint": "^2.4.0",
     "npm-run-all": "^4.0.1",
     "path": "^0.12.7"
+  },
+  "config": {
+    "unsafe-perm":true
   }
 }
