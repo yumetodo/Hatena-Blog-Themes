@@ -2,8 +2,6 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/yumetodo/Hatena-Blog-Themes.svg)](https://greenkeeper.io/)
 
-はてなブログで使えるテーマ集です。
+はてなブログで使えるテーマです。
 
-#### boilerplate
-
-* はてなブログのデザインCSSカスタマイズの土台に適したデザインテーマです。
+![img](./boilerplate/img/MIYA160131430534-768.png)
