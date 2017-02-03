@@ -3,7 +3,7 @@
     'use strict';
 
     /**
-     * @brief get propaty value as string, remove'px' and parseInt
+     * @description get propaty value as string, remove'px' and parseInt
      * @param dec {CSSStyleDeclaration}
      * @param propatyName {string}
      */
@@ -11,14 +11,14 @@
         return parseInt(dec.getPropertyValue(propatyName).replace(/([0-9]+)px/, '$1'), 10);
     };
     /**
-     * @brief convert to string and append 'px'
+     * @description convert to string and append 'px'
      * @param n {number}
      */
     const setPx = function(n) {
         return (0 === n) ? '0' : n + 'px';
     };
     /**
-     * @brief adjust margin and padding of #blog-title
+     * @description adjust margin and padding of #blog-title
      */
     const adjustHeader = function() {
         const ratio = 0.20;
@@ -47,6 +47,7 @@
         adjustHeader();
     });
     {
+        /** @type {number|undefined} */
         let resizeTimer;
         window.addEventListener('resize', function() {
             if (resizeTimer !== false) {
