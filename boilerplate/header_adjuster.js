@@ -50,11 +50,12 @@
         /** @type {number|undefined} */
         let resizeTimer;
         window.addEventListener('resize', function() {
-            if (resizeTimer !== false) {
+            if ('undefined' !== typeof resizeTimer) {
                 clearTimeout(resizeTimer);
             }
             resizeTimer = setTimeout(function() {
                 adjustHeader();
+                resizeTimer = undefined;
             }, 0.1);
         });
     }
