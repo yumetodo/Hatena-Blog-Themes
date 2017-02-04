@@ -4,7 +4,7 @@ node_js:
 install:
   - npm update -g npm
   - java -version
-  - ssh-agent bash -c 'ssh-add /tmp/ssh/my_ssh; git clone git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
+  - ssh-agent bash -c 'ssh-add /tmp/ssh/github-deploy; git clone git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
   - bash -c 'cd /dev/shm/Hatena-Blog-Themes; git status;'
   - echo $BRANCH
 
@@ -24,5 +24,5 @@ notifications:
 
 integrations:
    key:
-    - integrationName: my_ssh
+    - integrationName: github-deploy
       type: ssh-key
