@@ -1,19 +1,18 @@
 language: node_js
 node_js:
   - "node"
-install:
-  - npm update -g npm
-  - java -version
-  - ls -l /tmp/ssh/
-  - echo $BRANCH
-  - ssh-agent bash -c 'ssh-add /tmp/ssh/githubdeploy; git clone git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
-  - bash -c 'cd /dev/shm/Hatena-Blog-Themes; git status;'
 
 build:
   cache: true
   cache_dir_list:
     - $SHIPPABLE_BUILD_DIR/node_modules
   ci:
+    - npm update -g npm
+    - java -version
+    - ls -l /tmp/ssh/
+    - echo $BRANCH
+    - ssh-agent bash -c 'ssh-add /tmp/ssh/githubdeploy; git clone git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
+    - bash -c 'cd /dev/shm/Hatena-Blog-Themes; git status;'
     - npm install --unsafe-perm
     - npm run lint
     - npm run build
@@ -24,6 +23,6 @@ notifications:
     on_failure: always
 
 integrations:
-   key:
+  key:
     - integrationName: githubdeploy
       type: ssh-key
