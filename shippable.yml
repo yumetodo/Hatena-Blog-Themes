@@ -4,9 +4,10 @@ node_js:
 install:
   - npm update -g npm
   - java -version
+  - ls -l /tmp/ssh/
+  - echo $BRANCH
   - ssh-agent bash -c 'ssh-add /tmp/ssh/github-deploy; git clone git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
   - bash -c 'cd /dev/shm/Hatena-Blog-Themes; git status;'
-  - echo $BRANCH
 
 build:
   cache: true
