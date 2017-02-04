@@ -13,7 +13,7 @@ build:
     - npm run lint
     - npm run build
   on_success:
-    - echo "branch: $BRANCH"
+    - echo "branch - ${BRANCH}"
     - if [ "$BRANCH" == "yumetodo/master" ] ; then ./shippable_deploy.sh; fi
 
 notifications:
