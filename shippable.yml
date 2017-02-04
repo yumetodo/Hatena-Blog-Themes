@@ -6,7 +6,7 @@ install:
   - java -version
   - ls -l /tmp/ssh/
   - echo $BRANCH
-  - ssh-agent bash -c 'ssh-add /tmp/ssh/github-deploy; git clone git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
+  - ssh-agent bash -c 'ssh-add /tmp/ssh/githubDeploy; git clone git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
   - bash -c 'cd /dev/shm/Hatena-Blog-Themes; git status;'
 
 build:
@@ -25,5 +25,5 @@ notifications:
 
 integrations:
    key:
-    - integrationName: github-deploy
+    - integrationName: githubDeploy
       type: ssh-key
