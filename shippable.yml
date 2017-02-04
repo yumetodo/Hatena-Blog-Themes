@@ -4,6 +4,9 @@ node_js:
 install:
   - npm update -g npm
   - java -version
+  - ssh-agent bash -c 'ssh-add /tmp/ssh/my_ssh; git clone git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
+  - bash -c 'cd /dev/shm/Hatena-Blog-Themes; git status;'
+  - echo $BRANCH
 
 build:
   cache: true
@@ -18,3 +21,8 @@ notifications:
   email:
     on_success: change
     on_failure: always
+
+integrations:
+   key:
+    - integrationName: my_ssh
+      type: ssh-key
