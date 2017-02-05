@@ -1,6 +1,7 @@
 ls -l /tmp/ssh/
 ssh-agent bash -c 'ssh-add /tmp/ssh/githubdeploy; git clone -b gh-pages git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
 bash -c 'cd /dev/shm/Hatena-Blog-Themes; git status;'
+cd $SHIPPABLE_BUILD_DIR
 cp -r bin /dev/shm/Hatena-Blog-Themes
 cd /dev/shm/Hatena-Blog-Themes
 git config user.name "yumetodo"

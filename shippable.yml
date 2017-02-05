@@ -14,7 +14,7 @@ build:
     - npm run build
   on_success:
     - echo "branch - ${BRANCH}"
-    - if [ "$BRANCH" == "yumetodo/master" ] ; then ./shippable_deploy.sh; fi
+    - if [ "$BRANCH" == "yumetodo/master" ] ; then ./tools/shippable_deploy.sh; fi
 
 notifications:
   email:
