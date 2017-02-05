@@ -15,7 +15,7 @@ build:
   on_success:
     - echo "branch - ${BRANCH}"
     - pwd
-    - if [ "$BRANCH" == "yumetodo/master" ] ; then ./shippable_deploy.sh; fi
+    - if [ "$BRANCH" == "yumetodo/master" ] ; then pwd; ls -l; ./shippable_deploy.sh; fi
 
 notifications:
   email:
