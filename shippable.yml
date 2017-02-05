@@ -23,5 +23,5 @@ notifications:
 
 integrations:
   key:
-    - integrationName: githubdeploy
+    - integrationName: GithubDeploy
       type: ssh-key

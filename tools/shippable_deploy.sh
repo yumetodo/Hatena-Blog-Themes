@@ -1,9 +1,11 @@
 echo "ll /tmp/ssh"
 ls -l /tmp/ssh
+echo "ll /tmp/ssh/GithubDeploy"
+ls -l /tmp/ssh
 echo "ll /dev/shm"
 ls -l /dev/shm
 echo "clone taget repogitry..."
-ssh-agent bash -c 'ssh-add /tmp/ssh/githubdeploy; git clone -b gh-pages git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
+ssh-agent bash -c 'ssh-add /tmp/ssh/GithubDeploy; git clone -b gh-pages git@github.com:yumetodo/Hatena-Blog-Themes.git /dev/shm/Hatena-Blog-Themes'
 bash -c 'cd /dev/shm/Hatena-Blog-Themes; git status;'
 cd $SHIPPABLE_BUILD_DIR
 echo "copy minified result..."
@@ -16,6 +18,6 @@ git add .
 echo "commit changes..."
 git commit -m "Deploy minified css/js [skip ci]"
 echo "push commit..."
-ssh-agent bash -c 'ssh-add /tmp/ssh/githubdeploy; git push'
+ssh-agent bash -c 'ssh-add /tmp/ssh/GithubDeploy; git push'
 echo "finish deploy."
 cd $SHIPPABLE_BUILD_DIR
