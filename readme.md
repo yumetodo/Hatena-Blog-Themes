@@ -36,6 +36,9 @@ Responsive: yes
 
 のように記載してください。
 
+このテーマは後述の通りレスポンシブデザインに対応しています。``Responsive: yes``はモバイル向けのView Pointを自動で有効にするために必要です。  
+[はてなブログテーマ制作の手引き - はてなブログ ヘルプ#responsive](http://help.hatenablog.com/entry/theme/custom-theme#responsive)
+
 ![apply_css](./img/apply_css.png)
 
 ## レスポンシブデザイン
