@@ -1,20 +1,28 @@
 language: node_js
 node_js:
   - "node"
-install:
-  - npm update -g npm
-  - java -version
 
 build:
   cache: true
   cache_dir_list:
     - $SHIPPABLE_BUILD_DIR/node_modules
   ci:
+    - ls -l /tmp/ssh
+    - npm update -g npm
+    - java -version
     - npm install --unsafe-perm
     - npm run lint
     - npm run build
+  on_success:
+    - echo "branch - ${BRANCH}"
+    - if [ "$BRANCH" == "yumetodo/master" ] ; then ./tools/shippable_deploy.sh; fi
 
 notifications:
   email:
     on_success: change
     on_failure: always
+
+integrations:
+  key:
+    - integrationName: shippable2githubssh
+      type: ssh-key
