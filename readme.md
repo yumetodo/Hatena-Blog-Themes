@@ -3,17 +3,59 @@
 | Service     | CI Status                                                                                                                                                             |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Greenkeeper | [![Greenkeeperbadge](https://badges.greenkeeper.io/yumetodo/Hatena-Blog-Themes.svg)](https://greenkeeper.io/)                                                         |
-| lint/build  | [![RunStatus](https://api.shippable.com/projects/5893e78ef2e87f0f00914896/badge?branch=yumetodo/master)](https://app.shippable.com/projects/5893e78ef2e87f0f00914896) |
+| lint/build/deploy  | [![RunStatus](https://api.shippable.com/projects/5893e78ef2e87f0f00914896/badge?branch=yumetodo/master)](https://app.shippable.com/projects/5893e78ef2e87f0f00914896) |
 
 はてなブログで使えるテーマです。
 
 ![img](./boilerplate/img/MIYA160131430534-768.png)
 
+## Use this theme
+
+### JavaScript
+
+ヘッダのタイトル下の部分に
+
+```html
+<script src="https://yumetodo.github.io/Hatena-Blog-Themes/bin/header_adjuster.min.js"></script>
+```
+
+のように記述してください。
+
+![apply_javascript_on_head_under_title](./img/apply_javascript_on_head_under_title.png)
+
+### CSS
+
+デザインCSSの部分に
+
+```css
+/*
+Responsive: yes
+*/
+@import "https://yumetodo.github.io/Hatena-Blog-Themes/bin/style.min.css"
+```
+
+のように記載してください。
+
+![apply_css](./img/apply_css.png)
+
+## レスポンシブデザイン
+
+このテーマはレスポンシブデザインに対応しています。
+
+スマートフォン→詳細設定のレスポンシブデザインを有効にしてください。
+
+![apply_respnsive](./img/apply_respnsive.png)
+
+## イメージ画像
+
+![theme_windows10_firefox51](./img/theme_windows10_firefox51.png)
+![theme_ipod_touch_5th_chrome](./img/theme_ipod_touch_5th_chrome.png)
+
 ## Minify JavaScript/LESS(CSS)
 
 ### 必要なもの
 
-Java runtimeが必要です。
+Java runtimeが必要です。  
 https://java.com/ja/download/
 
 JavaにPATHが通っている必要があります。
@@ -38,4 +80,6 @@ LESSのCompileおよびMinifyには``lessc``とadd-onの``clean-css``を利用�
 $ npm install
 $ npm run build
 ```
+## License
 
+[License.md](./License.md)をごらんください。
