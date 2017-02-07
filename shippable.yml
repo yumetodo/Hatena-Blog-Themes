@@ -15,7 +15,8 @@ build:
     - npm run build
   on_success:
     - echo "branch - ${BRANCH}"
-    - if [ "$BRANCH" == "yumetodo/master" ] ; then ./tools/shippable_deploy.sh; fi
+    - echo "IS_PULL_REQUEST - ${IS_PULL_REQUEST}"
+    - if [ "$BRANCH" == "yumetodo/master" ] && [ $IS_PULL_REQUEST ]; then ./tools/shippable_deploy.sh; fi
 
 notifications:
   email:
