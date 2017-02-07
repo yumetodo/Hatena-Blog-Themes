@@ -16,7 +16,7 @@ build:
   on_success:
     - echo "branch - ${BRANCH}"
     - echo "IS_PULL_REQUEST - ${IS_PULL_REQUEST}"
-    - if [ "$BRANCH" == "yumetodo/master" ] && [ "${IS_PULL_REQUEST}" = "true" ]; then ./tools/shippable_deploy.sh; fi
+    - if [ "$BRANCH" == "yumetodo/master" ] && [ "${IS_PULL_REQUEST}" != "true" ]; then ./tools/shippable_deploy.sh; fi
 
 notifications:
   email:
