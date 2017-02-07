@@ -1,6 +1,5 @@
+#!/bin/bash -eu
 echo "ll /tmp/ssh"
-ls -l /tmp/ssh
-echo "ll /tmp/ssh/shippable2githubssh"
 ls -l /tmp/ssh
 echo "ll /dev/shm"
 ls -l /dev/shm
