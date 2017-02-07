@@ -15,7 +15,11 @@ git config user.email "yume-wikijp@live.jp"
 git config push.default simple
 git add .
 echo "commit changes..."
-git commit -m "Deploy minified css/js [skip ci]"
+git commit -m "Deploy minified css/js [skip ci]" &&:
+if [ $? != 0 ]; then
+    echo "git commit exit with $?"
+    exit 0 # nothing to commit means nothing to deploy.
+fi
 echo "push commit..."
 ssh-agent bash -c 'ssh-add /tmp/ssh/shippable2githubssh; git push'
 echo "finish deploy."
