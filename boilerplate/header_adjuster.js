@@ -1,8 +1,8 @@
 /* ! header_adjuster.js by yumetodo v1.0.4 | Boost Software License | https://github.com/yumetodo/Hatena-Blog-Themes */
 
-'use strict';
-
 (function() {
+    'use strict';
+
     /**
      * @description get propaty value as string, remove'px' and parseInt
      * @param dec {CSSStyleDeclaration}
