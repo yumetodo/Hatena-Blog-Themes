@@ -77,6 +77,7 @@
 		"space-before-function-paren": ["warn", "never"],
 		"space-infix-ops":             "off",
 		"space-unary-ops":             ["warn", {"words": true}],
+		"strict":                      ["error", "function"],
 		"valid-jsdoc":                 "off",
 		"yield-star-spacing":          [
 			"warn", {"before": true, "after": false}
