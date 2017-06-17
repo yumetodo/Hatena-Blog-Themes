@@ -1,6 +1,6 @@
 {
   "name": "yumetodo",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Hatena Blog Theme (yumetodo customized)",
   "main": "boilerplate/header_adjuster.js",
   "scripts": {
@@ -43,7 +43,7 @@
   "config": {
     "unsafe-perm": true
   },
-    "engines": {
-      "node": ">=4.0.0"
+  "engines": {
+    "node": ">=4.0.0"
   }
 }
