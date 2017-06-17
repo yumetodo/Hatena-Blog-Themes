@@ -44,9 +44,11 @@
             }
         }
     };
-    document.addEventListener('DOMContentLoaded', function() {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', adjustHeader);
+    } else {
         adjustHeader();
-    });
+    }
     {
         /** @type {number|undefined} */
         let resizeTimer;
