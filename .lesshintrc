@@ -1,5 +1,5 @@
 {
-    "fileExtensions": [".less", ".css"],
+    "fileExtensions": [".less"],
     "excludedFiles": ["boilerplate/3rdparty/normalize.css/normalize.css"],
 
     "attributeQuotes":         { "enabled": true, "severity": "error" },
