@@ -1,6 +1,6 @@
 {
   "name": "yumetodo",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Hatena Blog Theme (yumetodo customized)",
   "main": "boilerplate/header_adjuster.js",
   "scripts": {
