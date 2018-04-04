@@ -14,6 +14,8 @@ build:
     - ls -l /tmp/ssh
     - java -version
     - npm install --unsafe-perm
+    - echo $PATH
+    - echo $JAVA_HOME
     - npm run lint
     - npm run build
   on_success:
