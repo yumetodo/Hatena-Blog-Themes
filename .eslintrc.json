@@ -4,7 +4,7 @@
         "es6": true,
 		"node": true
     },
-	"x": {"ecmaVersion": 7, "sourceType": "script"},
+	"parserOptions": {"ecmaVersion": 2016, "sourceType": "script"},
 	"plugins": ["node"],
 	"rules": {
 		"arrow-parens":                ["warn", "as-needed"],
