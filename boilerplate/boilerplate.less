@@ -179,8 +179,13 @@ a.keyword { // lesshint qualifyingElement: false
 /* header */
 
 #blog-title {
-    margin: 30px 0;
-    padding: 20px 0;
+    margin: calc(~'10vw - 35px') 0;
+    padding: 0;
+}
+@media screen and (max-width: 677px){
+    #blog-title {
+        margin: 0;
+    }
 }
 
 #title {
