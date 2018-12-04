@@ -4,14 +4,9 @@
   "description": "Hatena Blog Theme (yumetodo customized)",
   "main": "boilerplate/header_adjuster.js",
   "scripts": {
-    "install": "node closure-compiler-install.js",
-    "build": "npm-run-all --parallel build:*",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint boilerplate/header_adjuster.js closure-compiler-install.js",
-    "lesshint": "lesshint boilerplate/",
-    "lint": "npm-run-all --parallel eslint lesshint",
-    "build:less": "lessc --clean-css=\"--s1 --advanced\" boilerplate/boilerplate.less bin/style.min.css",
-    "build:js": "java -jar closure-compiler.jar --compilation_level=ADVANCED  --js='boilerplate/header_adjuster.js' --js_output_file='bin/header_adjuster.min.js' --language_out=ECMASCRIPT5_STRICT -W=VERBOSE --charset='UTF-8'"
+    "lint": "lesshint boilerplate/",
+    "build": "lessc --clean-css=\"--s1 --advanced\" boilerplate/boilerplate.less bin/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -30,20 +25,11 @@
   },
   "homepage": "https://github.com/yumetodo/Hatena-Blog-Themes#readme",
   "devDependencies": {
-    "download": "^6.2.5",
-    "eslint": "^4.19.1",
-    "eslint-plugin-node": "^6.0.1",
-    "fs-extra": "^5.0.0",
-    "less": "^3.0.1",
+    "less": "^3.9.0",
     "less-plugin-clean-css": "^1.5.1",
-    "lesshint": "^5.0.0",
-    "npm-run-all": "^4.1.2",
-    "path": "^0.12.7"
-  },
-  "config": {
-    "unsafe-perm": true
+    "lesshint": "^5.3.0"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=8.0.0"
   }
 }
