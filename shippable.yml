@@ -9,8 +9,8 @@ build:
   ci:
     - ls -l /tmp/ssh
     - npm run lint
+    - npm run build
     - ls -la $SHIPPABLE_BUILD_DIR/bin
-    # - npm run build
   on_success:
     - echo "branch - ${BRANCH}"
     - echo "IS_PULL_REQUEST - ${IS_PULL_REQUEST}"
