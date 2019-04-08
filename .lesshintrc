@@ -33,7 +33,7 @@
     "spaceAfterPropertyColon": { "enabled": true, "severity": "warning", "style": "one_space" },
     "spaceAfterPropertyName":  { "enabled": true, "severity": "warning", "style": "no_space" },
     "spaceAfterPropertyValue": { "enabled": true, "severity": "warning", "style": "no_space" },
-    "spaceAroundComma":        { "enabled": true, "severity": "warning", "allowNewline": false, "style": "after" },
+    "spaceAroundComma":        { "enabled": true, "severity": "warning", "allowNewline": true, "style": "after" },
     "spaceAroundOperator":     { "enabled": true, "severity": "warning", "style": "both" },
     "spaceBeforeBrace":        { "enabled": true, "severity": "warning", "style": "one_space" },
     "spaceBetweenParens":      { "enabled": true, "severity": "warning", "style": "no_space" },
