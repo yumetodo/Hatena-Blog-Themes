@@ -11,20 +11,6 @@
 
 ## Use this theme
 
-### JavaScript
-
-ヘッダのタイトル下の部分に
-
-```html
-<script src="https://yumetodo.github.io/Hatena-Blog-Themes/bin/header_adjuster.min.js"></script>
-```
-
-のように記述してください。
-
-![apply_javascript_on_head_under_title](./img/apply_javascript_on_head_under_title.png)
-
-### CSS
-
 デザインCSSの部分に
 
 ```css
@@ -54,28 +40,7 @@ Responsive: yes
 ![theme_windows10_firefox51](./img/theme_windows10_firefox51.png)
 ![theme_ipod_touch_5th_chrome](./img/theme_ipod_touch_5th_chrome.png)
 
-## Minify JavaScript/LESS(CSS)
-
-### 必要なもの
-
-Java runtimeが必要です。  
-https://java.com/ja/download/
-
-JavaにPATHが通っている必要があります。
-
-```
-$ java -version
-java version "1.8.0_121"
-Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
-Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
-```
-
-のように表示されればOKです。
-
-### Minify
-
-JavaScriptのMinifyにはGoogle Closure Compiler(Java)を利用しています。  
-``npm install``で``closure-compiler-install.js``が実行され自動的に導入されます。
+## Minify LESS(CSS)
 
 LESSのCompileおよびMinifyには``lessc``とadd-onの``clean-css``を利用しています。
 
@@ -83,6 +48,7 @@ LESSのCompileおよびMinifyには``lessc``とadd-onの``clean-css``を利用�
 $ npm install
 $ npm run build
 ```
+
 ## License
 
 [License.md](./License.md)をごらんください。
